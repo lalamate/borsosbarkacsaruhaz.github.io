@@ -87,3 +87,12 @@ footer li>img{
 .row{
     margin-bottom: 12px;
 }
+.szerzo{
+    text-align: right;
+}
+.festekval
+{
+   
+    display: flex;
+    justify-content: flex-end;
+}
