@@ -3,29 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABC barkácsáruház</title>
+    <title>DIY barkácsáruház</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <nav class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <a href="index.html" class="logo">ABC barkácsáruház
-                    <img src="./img/pocket-knife.svg" alt="">
-                </a>
-                <a href="index.html">Főoldal</a>
-                <a href="festekek.html">Festékek</a>
-                <a href="faanyagok.html">Faanyagok</a>
-                <a href="rolunk.html">Rólunk</a>
-            </div>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <a class="navbar-brand logo" href="index.html">DIY barkácsáruház
+      <img src="./img/pocket-knife.svg" alt="DIY barkácsáruház logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" href="index.html">Főoldal <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="festekek.html">Festékek</a>
+        <a class="nav-link" href="faanyagok.html">Faanyagok</a>
+        <a class="nav-link" href="rolunk.html">Rólunk</a>
+      </div>
+      <div class="navbar-nav ml-auto">
+        <a class="nav-link" href="#">Bejelentkezés</a>
+        <a class="nav-link" href="#">Regisztráció</a>
+      </div>
+    </div>
+  </nav>
+
+    <div class="banner">
+
+    </div>
+    <div class="container tartalom">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="faanyagok.html" class="btn btn-primary">
+              <img class="d-block w-100" src="img/slide-01-min.jpg" alt="First slide"></a>
+          <div class="carousel-caption d-none d-md-block">
+                     <a href="rolunk.html" class="btn btn-primary"> Faanyagok</a>
+          </div>
         </div>
-    </nav>
-    <div class="banner"></div>
-    <div class="container">
+        <div class="carousel-item">
+          <a href="festekek.html" class="btn btn-primary">
+              <img class="d-block w-100" src="img/slide-02-min.jpg" alt="Second slide"></a>
+          <div class="carousel-caption d-none d-md-block">
+
+            <a href="festekek.html" class="btn btn-primary">Festékek</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="rolunk.html" class="btn btn-primary">
+              <img class="d-block w-100" src="img/slide-03-min.jpg" alt="Third slide"></a>
+          <div class="carousel-caption d-none d-md-block">
+            
+            <a href="rolunk.html" class="btn btn-primary">Rólunk</a>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
         <div class="row">
             <div class="col-12">
-                <h1 class="my-4">ABC barkácsáruház</h1>
+                <h1 class="my-4">DIY barkácsáruház Fejlesztés alatt...</h1>
             </div>
         </div>
     </div>
@@ -51,8 +101,19 @@
       </tbody>
       <tbody></tbody>
     </table>
+     <h2 class="mt-3">Kapcsolat:</h2>
+    <ul>
+      <li><img src="./img/letter.svg" alt="DIY Barkácsáruház">DIY Barkácsáruház
+      </li>
+      <li><img src="./img/email.svg" alt="info@barkacsaruhaz.hu">info@barkacsaruhaz.hu</li>
+      <li><img src="./img/telephone.svg" alt="+36-1-555-55-55">+36-1-555-55-55</li>
+    </ul>
+
         </div>
     </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 </body>
 </html>
